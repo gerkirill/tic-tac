@@ -30,12 +30,32 @@ describe('#move()', function() {
     );
   });
 
-  xit('should make a valid o move', function() {
-    
+  it('should make a valid o move', function() {
+    assert.deepEqual(
+      move(gameState, 5),
+      {
+        board: [
+          'x', '-', 'o',
+          '-', 'x', 'o',
+          '-', '-', '-',
+        ],
+        current: 'x'
+      }
+    );    
   });
 
-  xit('should not change game-state if the move is invalid', function() {
-    
+  it('should not change game-state if the move is invalid', function() {
+    assert.deepEqual(
+      move(gameState, 0),
+      {
+        board: [
+          'x', '-', 'o',
+          '-', 'x', 'o',
+          '-', '-', '-',
+        ],
+        current: 'o'
+      }
+    );  
   });
 
   // check move outside of the board?
