@@ -3,8 +3,11 @@ const restart = require('../js/restart');
 
 describe('#restart()', function() {
 
-  xit('should return game-state with empty board and current: x', function() {
-    
+  it('should return game-state with empty board and current: x', function() {
+    assert.deepEqual(restart(), {
+      board: ['-','-','-','-','-','-','-','-','-'],
+      current:  'x',
+    })
   });
 
 })
