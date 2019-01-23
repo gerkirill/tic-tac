@@ -4,28 +4,28 @@ const renderHint = require('../js/render-hint');
 
 describe('#renderHint()', function() {
 
-  xit('should be a function', function() {
+  it('should be a function', function() {
     assert.deepEqual(typeof renderHint, 'function');
   })
 
-  xit('should render "Next move: x"', function() {
+  it('should render "Next move: x"', function() {
     assert.deepEqual(renderHint('x', 'progress'), 'Next move: x');
   });
 
-  xit('should render "Next move: o"', function() {
-   
+  it('should render "Next move: o"', function() {
+    assert.deepEqual(renderHint('o', 'progress'), 'Next move: o'); 
   });
 
-  xit('should render "It is a draw"', function() {
-    
+  it('should render "It is a draw"', function() {
+    assert.deepEqual(renderHint(' ','draw'), 'It is a draw');   
   });
 
-  xit('should render "x wins"', function() {
-    
+  it('should render "x wins"', function() {
+    assert.deepEqual(renderHint('x','x_win'), 'x wins'); 
   });
 
-  xit('should render "o wins"', function() {
-    
+  it('should render "o wins"', function() {
+    assert.deepEqual(renderHint('o','o_win'), 'o wins');     
   });
   
 })
