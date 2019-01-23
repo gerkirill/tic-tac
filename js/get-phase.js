@@ -13,11 +13,11 @@ for (var i=0;i<=2;i++){
 // if (arr[2][0]==arr[2][1] && arr[2][0]==arr[2][2]) return arr[2][0]+'_win'; else
 
 for (var i=0;i<=2;i++){
-  if (arr[0][i]==arr[1][i] && arr[1][i]==arr[2][i]) return arr[0][i]+'_win'; 
+  if (arr[0][i]==arr[1][i] && arr[0][i]==arr[2][i]) return arr[0][i]+'_win'; 
 }
 
 // if (arr[0][0]==arr[1][0] && arr[1][0]==arr[2][0]) return arr[0][0]+'_win'; else
-// if (arr[0][1]==arr[1][1] && arr[1][1]==arr[2][1]) return arr[0][1]+'_win'; else 
+// if (arr[0][1]==arr[1][1] && arr[0][1]==arr[2][1]) return arr[0][1]+'_win'; else 
 // if (arr[0][2]==arr[1][2] && arr[1][2]==arr[2][2]) return arr[0][2]+'_win'; else
 
 if (arr[0][0]==arr[1][4] && arr[0][0]==arr[2][2]) return arr[0][0]+'_win';
