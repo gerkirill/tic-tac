@@ -1,0 +1,20 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "check.js",
+  "scripts": {
+    "test": "mocha",
+    "test:restart": "mocha --watch --grep '#restart'",
+    "test:move": "mocha --watch --grep '#move'",
+    "test:renderBoard": "mocha --watch --grep '#renderBoard'",
+    "test:renderHint": "mocha --watch --grep '#renderHint'",
+    "test:getPhase": "mocha --watch --grep '#getPhase'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
