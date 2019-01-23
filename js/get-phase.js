@@ -1,8 +1,9 @@
 function getPhase(board) {
+  board = board.slice();
   var resultArr = [];
   for (var i = 0; i < board.length; i++) {
-    if (board[i] == 'X') {board[i] = 1;}
-    else if (board[i] == '0') {board[i] = -1;} 
+    if (board[i] == 'x') {board[i] = 1;}
+    else if (board[i] == 'o') {board[i] = -1;} 
     else {board[i] = 0;}
   }
   resultArr[0] = board[0] + board[1] + board[2];
