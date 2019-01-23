@@ -7,9 +7,9 @@ function getPhase(board) {
   if (board[0] == board[4] && board[0] == board[8] && board[0] != '-') return board[0] + '_win';
   if (board[2] == board[4] && board[2] == board[6] && board[2] != '-') return board[2] + '_win';
 
-  if (board.indexOf('-') != -1) return 'progress'; else
+  if (board.indexOf('-') != -1) return 'progress'; 
 
-    return 'draw';
+  return 'draw';
 }
 
 // DON't modify below this line !!!
