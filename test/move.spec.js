@@ -12,12 +12,22 @@ describe('#move()', function() {
     current: 'x'
   }
 
-  xit('should be a function', function() {
+  it('should be a function', function() {
     assert.deepEqual(typeof move, 'function');
   })
 
-  xit('should make a valid x move', function() {
-
+  it('should make a valid x move', function() {
+    assert.deepEqual(
+      move(gameState, 0),
+      {
+        board: [
+          'x', '-', 'o',
+          '-', 'x', '-',
+          '-', '-', '-',
+        ],
+        current: 'o'
+      }
+    );
   });
 
   xit('should make a valid o move', function() {
