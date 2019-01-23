@@ -21,11 +21,11 @@ describe('#renderHint()', function() {
   });
 
   it('should render "x wins"', function() {
-    assert.deepEqual(renderHint('x','x_win'), 'x wins'); 
+    assert.deepEqual(renderHint(' ','x_win'), 'x wins'); 
   });
 
   it('should render "o wins"', function() {
-    assert.deepEqual(renderHint('o','o_win'), 'o wins');     
+    assert.deepEqual(renderHint(' ','o_win'), 'o wins');     
   });
   
 })
