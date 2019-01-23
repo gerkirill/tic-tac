@@ -1,6 +1,6 @@
 function renderBoard(board) {
   // write your code here
-  var currentBord = board.map(cell => '<div>' + cell +'</div>');
+  var currentBord = board.map(cell => '<div>' + cell +'</div>').join('');
   return currentBord;
 }
 
