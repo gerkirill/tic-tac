@@ -1,5 +1,7 @@
 function move(gameState, cellIdx) {
   // write your code here
+  gameState.board[cellIdx] = gameState.current;
+  gameState.current === 'o' ? gameState.current = 'x' : gameState.current = 'o';
   return gameState;
 }
 
