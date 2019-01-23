@@ -3,17 +3,19 @@ const renderBoard = require('../js/render-board');
 
 describe('#renderBoard()', function() {
 
-  xit('should be a function', function() {
+  it('should be a function', function() {
     assert.deepEqual(typeof move, 'function');
-  })
+  });
 
-  xit('should render empty board', function() {
+  it('should render empty board', function() {
 
     const board = [
       '-', '-', '-', 
       '-', '-', '-', 
       '-', '-', '-', 
     ]
+
+    assert.deepEqual(renderBoard(board), '<div>-</div><div>-</div><div>-</div><div>-</div><div>-</div><div>-</div><div>-</div><div>-</div><div>-</div>')
 
   });
 
