@@ -1,11 +1,8 @@
-var gameState = {
-  board: ['-','-','-','-','-','-','-','-','-'],
-  current:  'x',
-
-};
-
 function restart() {
-  // write your code here
+  var gameState = {
+    board: ['-','-','-','-','-','-','-','-','-'],
+    current:  'x'
+  };
   return gameState;
 }
 

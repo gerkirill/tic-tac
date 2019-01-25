@@ -1,16 +1,13 @@
 // current is either 'x' or 'o'
 // phase is one of 'progress', 'draw' 'x_win', 'o_win'
 function renderHint(current, phase) {
-  if (current == 'x' && phase == 'progress') {
-    return 'Next move: x';
-  } else if (current == 'o' && phase == 'progress') {
-    return 'Next move: o';
-  } else if (phase == 'draw') {
+  if (phase=='progress') return 'Next move '+ current.toUpperCase()
+  if (phase == 'draw') {
     return 'It is a draw';
   } else if (phase == 'x_win') {
-    return 'x wins';
-  } else (phase == 'o_win')
-  return 'o wins';
+    return 'X wins';
+  } else if (phase == 'o_win')
+  return 'O wins';
 
 
 }
